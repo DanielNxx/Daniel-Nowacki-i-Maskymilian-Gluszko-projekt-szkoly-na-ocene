@@ -1,6 +1,6 @@
 #contener{
     background-color:#685369;
-    font-size:18px;
+    font-size:1em;
     color:#685369;
     height: 96%;
     width:96%;
@@ -56,14 +56,15 @@
         float:left;
         width:96%;
         margin-left:2%;
+        font-size:1em;
         
     }
     #logo{
         float:left;
         width:96%;
-        height:18vw;
+        height:9vw;
         margin-left:2%;
-        
+        font-size:1em;
     }
     #navi{
         float:left;
@@ -74,6 +75,7 @@
     .menu{
         float:left;
         width:96%;
+        height:2vw;
         margin-left:2%;
         
     }
@@ -81,13 +83,14 @@
         float:left;
         width:96%;
         margin-left:2%;
+        height:18vw;
         
     }
     #sub{
         float:left;
         width:96%;
         margin-left:2%;
-        height:18vw;
+        height:14vw;
     }
     #footer{
         float:left;
@@ -95,5 +98,97 @@
         margin-left:2%;
         
     }
-    
+    @media  (max-width:900px){
+        #container{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            font-size:1em;
+        }
+        #logo{
+            float:left;
+            width:96%;
+            height:18vw;
+            margin-left:2%;
+            
+        }
+        #navi{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            
+        }
+        .menu{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            height:3vw;
+            
+        }
+        #article{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            height:25vw;
+        }
+        #sub{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            height:25vw;
+        }
+        #footer{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            
+        }
+    }
+    @media  (max-width:600px){
+        #container{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            font-size:1em;
+        }
+        #logo{
+            float:left;
+            width:96%;
+            height:18vw;
+            margin-left:2%;
+            
+        }
+        #navi{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            
+        }
+        .menu{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            height:4.4vw;
+            
+        }
+        #article{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            height:50vw;
+        }
+        #sub{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            height:50vw;
+        }
+        #footer{
+            float:left;
+            width:96%;
+            margin-left:2%;
+            
+        }    
+
+
 }
