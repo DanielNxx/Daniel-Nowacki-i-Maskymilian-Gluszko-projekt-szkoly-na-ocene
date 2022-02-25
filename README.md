@@ -17,3 +17,4 @@ punkt 1 i 2 razem
 punkt 3,4,5,6 odzielnie.
 
 przewidywane 4 tygodnie pracy.
+Dzisiaj pokazałem Maksowi jak używać githubu.
