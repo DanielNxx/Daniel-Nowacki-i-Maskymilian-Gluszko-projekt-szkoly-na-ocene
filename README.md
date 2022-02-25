@@ -18,4 +18,4 @@ punkt 3,4,5,6 odzielnie.
 
 przewidywane 4 tygodnie pracy.
 Dzisiaj pokazałem Maksowi jak używać githubu.
-Maks zròb logo z lektorem 
+Maks zròb logo z vektorem 
