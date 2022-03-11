@@ -1,56 +1,101 @@
-#contener{
-    background-color:#685369;
-    font-size:1em;
-    color:#685369;
-    height: 96%;
-    width:96%;
-    margin:2%;
-    font-family:Arial;
+*{
+    box-sizing: border-box;
 }
 
-#logo{
-    width: 100%;
-    height:10vw;
-    text-align: center;
-    color:#ffff90;
-    background-color:#c6d8af ;
+body{
+    margin: 0;
+    padding: 0;
+    font-size:1em;
+    font-family: Arial;
 }
-#navi{
-    width:15vw;
-    height:75%;
-    color:#ffff90;
+
+#container{
+    width:100vw;
+    height: 100vh;
     background-color:#685369;
-    float: left;
 }
-.menu{
+
+#header{
+    width: 100%;
+    height:15%;
     color:#ffff90;
-    font-size: 36px;
+    background-color:#524053;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+}
+
+#header span
+{
+    text-align: center;
+}
+
+#middle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+}
+
+#navi{
     width:15%;
-    height:6vw;
-    margin: 1%;
-    padding: 1%;
-    
+    height: 100%;
+    color:#ffff90;
+    background-color:#715d72;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.menu{
+    background-color:#685369;
+    color:#ffff90;
+    font-size: 2vw;
+    width:100%;
+    user-select: none;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #685369;
+    transition: backround-color, 0.2s;
+}
+
+.menu.alt
+{
+    background-color:#624e63;
+}
+
+.menu a{
+    text-align: center;
+}
+
+.menu:hover{
+    cursor: pointer;
+    background-color: #876d88;
+    transition: backround-color, 0.2s;
+}
+
 #article{
-    float:left;
- width:50%;
- height:32.4vw;
- background-color:#efa48b ;
- float:left;
- border:#685369 1px solid;
+    width: 50%;
+    height:100%;
+    background-color:#715d72;
 }
+
 #sub{
-    width:33.7%;
-    height:32.4vw;
-    background-color:#efa48b ;
-    float: left;   
+    width:35%;
+    height:100%;
+    background-color:#685369;
 }
+
 #footer{
     width: 100%;
-    height: 4vw;
-    background-color: #c6d8af;
-    clear: both;
+    height: 15%;
+    background-color:#524053;
 }
+/*
 @media  (max-width:1200px){
     #container{
         float:left;
@@ -188,7 +233,5 @@
             width:96%;
             margin-left:2%;
             
-        }    
-
-
-}
+        }
+}*/
