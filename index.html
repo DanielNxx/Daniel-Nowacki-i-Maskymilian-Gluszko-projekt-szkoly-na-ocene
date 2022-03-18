@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
     <head>
@@ -6,33 +7,172 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>szkoła zseit DN i MG</title>
         <link rel="stylesheet" href="style.css">
+
+        <script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slider");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+    </script>
+
+
     </head>
 
     <body>
-        <div id="container">
-            <div id="header">
+        <article id="container">
+            <header id="header">
                 <span>Zespół Szkół Elektronicznych i Telekomunikacyjnych</span>
-            </div>
+            </header>
             
-            <div id="middle">
-                <div id="navi">
-                    <div class ="menu"><a>Nowiny</a></div>
-                    <div class ="menu alt"><a>O szkole</a></div>
-                    <div class ="menu"><a>Uczniowie</a></div>
-                    <div class ="menu alt"><a>Nauczyciele</a></div>
-                    <div class ="menu"><a>Dokumenty</a></div>
+            <article id="middle">
+                <navi id="navi">
+                    <navi class ="menu"><a>Nowiny</a></navi>
+                    <navi class ="menu alt"><a>O szkole</a></navi>
+                    <navi class ="menu"><a>Uczniowie</a></navi>
+                    <navi class ="menu alt"><a>Nauczyciele</a></navi>
+                    <navi class ="menu"><a>Dokumenty</a></navi>
 
-                    <div class ="menu alt"><a>Nowiny 2</a></div>
-                    <div class ="menu"><a>O szkole 2</a></div>
-                    <div class ="menu alt"><a>Uczniowie 2</a></div>
-                    <div class ="menu"><a>Nauczyciele 2</a></div>
-                    <div class ="menu alt"><a>Dokumenty 2</a></div>
-                </div>
-                <div id="article"></div>
-                <div id="sub"></div>
-            </div>
+                    
+                </navi>
+                <article id="article">
+                    <nav id = "okienko">
+                    <section class ="con">Elektro show<img src="zdjecia.png"></section>
+                    <section class ="con">Elektro show<img src="zdjecia.png"></section>
+                    <section class ="con">Elektro show<img src="zdjecia.png"></section>
+                    </nav>
+                </article>
+                <article id="sub">
 
-            <div id="footer"></div>
-        </div>
+                    <div class="slideshow-container">
+                        <div class="slider fade">
+                          <h1>Technik Programista</h1>
+                          
+                            <p>      
+                                Programista to jeden z najlepiej zarabiających i najbardziej poszukiwanych na rynku pracy
+                                 zawodów. Aby nim zostać, potrzeba kwalifikacji i umiejętności.
+                                Technik programista jest znakomitym wyborem drogi życiowej dla wszystkich, którzy z ciekawością 
+                                patrzą na komputery, oraz nie przerażają ich przedmioty ścisłe.
+                                Programowanie to nie tylko pieniądze, to ciekawa pasja .
+                            
+                                <br><br>
+                                Uczniowie, którzy podejmą naukę na nowym kierunku zdobędą wiedzę teoretyczną i umiejętności 
+                                praktyczne z kwalifikacji zawodowych w zakresie projektowania baz danych i stron internetowych
+                                 oraz programowania i testowania aplikacji. Będą tworzyć programy w najpopularniejszych obecnie 
+                                 językach tj. Python, C++, JavaScript, PHP, a także znajomości innych języków tj. SQL (przydatnego
+                                  do tworzenia i zarządzania relacyjnymi bazami danych), HTML 5 i CSS.
+                        </p>    
+                            
+                        
+                        </div>
+                      
+                        <div class="slider fade">
+                            <h1>Technik Mechatronika</h1>
+                            <p>      
+                                Mechatronika jest zintegrowaną dziedziną nauki i techniki, zajmującą się problemami mechaniki,
+                                elektroniki, robotyki, automatyki oraz informatyki. Ten nowy obszar nauki rozwija się błyskawicznie
+                                i w dniu dzisiejszym jest bardzo dużo dziedzin, w których napotykamy na urządzenia mechatroniczne.
+                                Urządzenia te znajdują zastosowanie w przemyśle lotniczym, samochodowym, elektronicznym, maszynowym,
+                                precyzyjnym, można je spotkać również w nowoczesnych przyrządach medycznych, sprzęcie biurowym,
+                                sprzęcie AGD czy nawet zabawkach dla dzieci.<br><br>
+
+                                Technik mechatronik jest nowym zawodem. W trakcie nauki w technikum otrzymasz wiedzę min. z elektrotechniki,
+                                elektroniki, mechaniki oraz pneumatyki i hydrauliki, co pozwoli ci posługiwać się nowoczesnymi technikami
+                                komputerowymi w celu projektowania i konstruowania urządzeń i systemów mechatronicznych, diagnozować i 
+                                naprawiać systemy z zastosowaniem nowoczesnych narzędzi pomiarowych, obsługiwać i programować sterowniki programowalne.
+                            </p>   
+                        </div>
+                      
+                        <div class="slider fade">
+                            <h1>Technik elekronik</h1>
+                            <p>      
+                                To dynamiczny kierunek skupiony na nowoczesnych technologiach które ułatwiają człowiekowi życie. Postęp w dziedzinie elektroniki 
+                                i technologii elektronicznej wymaga istnienia specjalistów. My takich przygotowujemy bo elektronika jest wszędzie: telefony komórkowe,
+                                laptopy, sprzęt RTV czy AGD, dlatego technik elektronik nie musi  martwić się o pracę.
+                                Zmieniają się technologie i nie ma już dziedziny przemysłu, która nie opierałaby się na elektronice.
+                                Podstawowe znaczenie ma ona w telekomunikacji, informatyce, automatyce, astronomii, medycynie…po prostu,
+                                wszędzie  Dlatego też zawód technik elektronik jest zawodem przyszłości. 
+                                Elektronik jest potrzebny jako serwisant, sprzedawca, konstruktor czy kontroler jakości.
+                            </p>   
+                        </div>
+                        <div class="slider fade">
+                            <h1>technik urządzeń i systemów energetyki odnawialnej</h1>
+                            <p>      
+                                Osoba na tym stanowisku organizuje i przeprowadza montaż, konserwuje oraz kontroluje pracę urządzeń 
+                                oraz systemów energetyki odnawialnej. Nadzoruje także funkcjonowanie instalacji wodociągowych,
+                                kanalizacyjnych i grzewczych w budynkach, a poza tym jest odpowiedzialna za sporządzanie kosztorysów, 
+                                ofert i umów dotyczących wspomnianych urządzeń.
+                                <br><br>
+                                W związku z tym, że źródeł energii odnawialnej jest na naszej planecie kilka, w tym zawodzie można
+                                wybrać konkretną specjalizację – energetykę wodną, wiatrową, geotermalną oraz wodorową. W zależności
+                                od specjalizacji, technik urządzeń i systemów energetyki odnawialnej może więc pracować na budowie –
+                                przy montażu, eksploatacji czy nadzorze urządzeń lub też w biurze – przy projektowaniu. Ma on dużą 
+                                wiedzę na temat energetyki odnawialnej, a ponadto umie obsługiwać związane z nią urządzenia i instalacje
+                                oraz wykonuje pomiary wielu ich parametrów. Do jego obowiązków należy również wybór odpowiedniej lokalizacji
+                                tych urządzeń i systemów. Ma on także wiedzę z zakresu budownictwa – szczególnie energooszczędnego.
+                            </p>   
+                        </div>
+                        <div class="slider fade">
+                            <h1>Technik Teleinformatyk</h1>
+                            <p>      
+                                Teleinformatyk to nowy zawód, który łączy w sobie co najmniej trzy dyscypliny: elektronikę,
+                                informatykę i zdobycze telekomunikacji. Trudno wyobrazić sobie codzienne życie bez telefonów,
+                                Internetu czy telewizji. Korzystamy z nich w dużej mierze za przyczyną nauki, jaką jest teleinformatyka.
+                                Kierunek ten kształci specjalistów, którzy bez trudności poruszają się w tematyce projektowania lokalnych 
+                                sieci komputerowych i techniki światłowodowej, konfiguracji urządzeń sieciowych przewodowych i
+                                bezprzewodowych, konfiguracji central telefonicznych, budowie instalacji okablowania teleinformatycznego 
+                                czy administrowania systemami Windows i Linux. Do zadań technika teleinformatyka więc może należeć, np.
+                                projektowanie prostych sieci komputerowych oraz administrowanie nimi.
+                                <br><br>
+                                Urządzenia i systemy teleinformatyczne charakteryzują się dużym stopniem złożoności, 
+                                nowoczesności i częstymi zmianami technologicznymi, dlatego ze względu na szybki postęp,
+                                jaki dokonuje się w dziedzinie teleinformatyki, praca w tym zawodzie wymaga stałego poszerzania wiedzy.
+                                Istnieje potrzeba śledzenia nowych rozwiązań technicznych, które obejmują wszystkie obszary informatyki, 
+                                teleinformatyki i telekomunikacji. Ciągły rozwój telekomunikacji wymusza zapotrzebowanie na specjalistów w tym zawodzie.
+                            
+                            </p>   
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+                      <br>
+                      <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        
+                    </div>
+
+                </article>
+            </article>
+
+            <footer id="footer"></footer>
+        </article>
     </body>
 </html>
+© 2022 GitHub, Inc.
+Terms
+Privac
