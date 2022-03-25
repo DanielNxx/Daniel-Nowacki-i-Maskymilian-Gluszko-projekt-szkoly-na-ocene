@@ -12,7 +12,6 @@ body{
 #container{
     width:100vw;
     height: 100vh;
-    background-color:#685369;
 }
 
 #header{
@@ -24,10 +23,10 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 3vw;
+    user-select: none;
 }
 
-#header span
-{
+#header span{
     text-align: center;
 }
 
@@ -35,7 +34,14 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 70%;
+    height: 80%;
+}
+
+#right{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 #navi{
@@ -52,7 +58,7 @@ body{
 .menu{
     background-color:#685369;
     color:#ffff90;
-    font-size: 2vw;
+    font-size: 1.9vw;
     width:100%;
     user-select: none;
     flex-grow: 1;
@@ -60,133 +66,84 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #685369;
-    transition: backround-color, 0.2s;
+    transition: 0.2s;
 }
 
-.menu.alt
-{
+.menu.alt{
     background-color:#624e63;
 }
 
 .menu a{
     text-align: center;
-    
 }
 
 .menu:hover{
     cursor: pointer;
     background-color: #876d88;
-    transition: backround-color, 0.2s;
+    font-size: 2.2vw;
+    transition: 0.2s;
 }
 
 #article{
-    width: 50%;
+    width: 60%;
     height:100%;
     background-color:#715d72;
 }
 
 #sub{
-    width:35%;
+    width:40%;
     height:100%;
     background-color:#685369;
 }
 
 #footer{
     width: 100%;
-    height: 15%;
+    height: 5%;
     background-color:#524053;
 }
 
+@media only screen and (max-width: 1000px) {
+    #header{
+        height: 10%;
+    }
 
+    #middle{
+        flex-direction: column;
+        height: 85%;
+    }
 
-* {box-sizing:border-box}
-.slideshow-container {
-    width: 75%;
-  position: relative;
-  margin: auto;
-  font-size:1vw;
-  color:#ffff90;
-  height: 90%;
-}
-.slider {
-  display: none;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 9px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+    #right
+    {
+        flex-direction: column;
+        width: 100%;
+        flex-grow: 1;
+    }
 
-.dot {
-  cursor: pointer;
-  height: 1vw;
-  width: 1vw;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+    #navi{
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+        flex-wrap: wrap;
+    }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
+    .menu{
+        height: 50%;
+        width: 20%;
+        flex-grow: 0;
+        font-size: 2.5vw;
+    }
 
+    .menu:hover{
+        font-size: 2.8vw;
+    }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-.con,img{
-    width:20%;
-    height:20%;
-    margin: 5%;
-    font-size:1vw;
-    z-index:2;
-}
-.con>img{
-    width:50%;
-    height:50%;
-    z-index:2;
-}
-.con>img:hover{
-    width:100%;
-    height:100%;
-    
-}
-.con:hover{
-    font-size: 1.5vw;
-    margin:8%;
-}
+    #article{
+        width: 100%;
+        height: 60%;
+    }
 
-.menu a{
-    text-align: center;
-    
+    #sub{
+        width: 100%;
+        height: 40%;
+    }
 }
-
-
-@media  (max-width:800px){
-    .navi{
-        font-size: 212vw;
-    }    
-}
-© 2022 GitHub, Inc.
-Terms
